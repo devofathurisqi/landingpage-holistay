@@ -102,19 +102,19 @@ const Footer = () => {
 
     return (
         <div>
-            <Box position="fixed" zIndex={1} style={{minWidth:"100%"}} p={4} bottom={0} bg="white">
-               <Accordion defaultIndex={[0]} allowMultiple experimental_spaceX={1} display={display}>
+            <Box position="fixed" zIndex={1} style={{minWidth:"100%"}} p={0} bottom={0} bg="white" >
+               <Accordion defaultIndex={[1]} allowMultiple display={display}>
                     <AccordionItem>
                         <h2>
                             <AccordionButton>
                                 <Box as="span" flex='1' textAlign='center'>
-                                    <Text fontWeight="Bold" fontFamily="sans-serif">
+                                    <Text fontWeight="Bold" fontFamily="sans-serif" fontSize="14px">
                                         @2022 Holistay,Inc . Privasi . Ketentuan . Peta Situs
                                     </Text>
                                 </Box>
                                 <Spacer />
                                 <Box as="span" flex='1' textAlign='center'>
-                                    <Text fontWeight="bold" fontFamily="sans-serif">
+                                    <Text fontWeight="bold" fontFamily="sans-serif" fontSize="14px">
                                         Indonesia $USD Dukungan $ sumber Informasi
                                     </Text>
                                 </Box>
@@ -124,7 +124,7 @@ const Footer = () => {
                         <AccordionPanel pb={4}>
                             <Flex>
                                 <Box flex="1" display="flex" flexDirection="column" padding="20px">
-                                    <Image src={Logo} width="20%" />
+                                    <Image src={Logo} width="25%" />
                                     <Text margin="20px 0px">
                                         Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                                         Enim eos ipsa illo voluptatibus voluptatem tempore

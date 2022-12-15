@@ -37,7 +37,7 @@ function NavBot() {
 
     if (isMobile) {
         return (
-            <Box position="fixed" zIndex={1} style={{minWidth:"100%"}} p={4} bottom={0}>
+            <Box position="fixed" zIndex={1} style={{minWidth:"100%"}} p={0} bottom={0}>
                 <Center>
                     <Flex w={[400, 450, 500]} h="7vh" bgColor="white" justifyContent="center" color="black" dropShadow="2xl" >
                         <Flex justifyContent="space-evenly" align="center" w={[400, 450, 500]} >

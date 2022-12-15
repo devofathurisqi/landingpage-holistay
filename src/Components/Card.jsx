@@ -4,7 +4,6 @@ import {
     Image,
     Flex,
     Center,
-    useAnimationState
 } from "@chakra-ui/react";
 import { useState} from "react";
 import Axios from "axios";
@@ -51,12 +50,9 @@ function HomeCard() {
         )
     }
 
-    
-
     return (
         <>
             {loading ? <Loadingg /> :
-            
                 <Center>
                     <motion.div
                     className="card"
