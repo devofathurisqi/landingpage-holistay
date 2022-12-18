@@ -37,7 +37,10 @@ const NavBar = () => {
         base: "block",
         md: "none"
     })
-
+    const logoTabletAndDesktop = useBreakpointValue({
+        md:"45%",
+        lg:"25%"
+    })
 
     return (
         <Box
@@ -59,7 +62,7 @@ const NavBar = () => {
                 >
                     <Box display="flex" alignItems="center">
                         <Box>
-                            <Image src={Logo} width="25%" cursor="pointer" display={displayTablet} />
+                            <Image src={Logo} width={logoTabletAndDesktop} cursor="pointer" display={displayTablet} />
                         </Box>
                         <Image src={LogoOnly} width="30px" cursor="pointer" display={displayLogoOnly} marginRight="5px" />
                         <Box width="auto">
